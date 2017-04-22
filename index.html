@@ -1,0 +1,180 @@
+
+<html> 
+
+<!-- jQuery -->
+<script src="js/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+
+<!--plugin clock-->
+<!--<link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
+<script type="text/javascript" src="js/jquery.plugin.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script> 
+
+<!-- Funciones Tablero -->
+<link rel="stylesheet" type="text/css" href="css/estilo-tablero.css">
+<script type="text/javascript" src="js/funciones-tablero.js"></script> 
+
+<script type="text/javascript">
+
+</script>
+
+	<head> 
+		<title>Tablero Recoleta</title> 
+	</head> 
+
+	<body>
+
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-body text-center">
+					<h1>Basquetbol Recoleta</h1>
+				</div>
+			</div>
+			<div class="panel panel-default">
+
+				<div class="panel-body text-center col-md-4">
+
+					<div>
+						<h2 id="home-name">
+							Local
+						</h2>
+
+						<div id="home-point" class="points">
+							0
+						</div>
+
+						<div class="col-md-12">
+							<button type="button" class="btn btn-primary" onclick="HomeAdd(1);">
+							     +1
+						    </button>
+						    <button type="button" class="btn btn-primary" onclick="HomeAdd(2);">
+							     +2
+						    </button>
+						    <button type="button" class="btn btn-primary" onclick="HomeAdd(3);">
+							     +3
+						    </button>
+						    <button type="button" class="btn" onclick="HomeAdd(-1);">
+							     -1
+						    </button>
+						</div>
+					</div>
+					<div style="height:70px;"></div>
+					<div>
+						<div class="span12 text-center">
+							<h3 class="col-md-6" >
+								Faults:
+							</h3>
+							<h3 id="home-fault" class="col-md-6 faults text-left">
+								0
+							</h3>
+						</div>
+
+						<div class="col-md-12">
+							<button type="button" class="btn btn-primary" onclick="HomeAddFault(1);">
+							     +1
+						    </button>
+						    <button type="button" class="btn" onclick="HomeAddFault(-1);">
+							     -1
+						    </button>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="panel-body text-center col-md-4">
+					<h2>
+						Tiempo
+					</h2>
+
+					<div class="span12">
+						<div id="clock1" class="time-first"></div>
+						<button type="button" class="btn btn-primary" id="btn-reset1">
+						    <i class="glyphicon glyphicon-repeat"></i>
+						    Reset
+					    </button>
+
+					    <div class="btn-group" data-toggle="buttons">
+					     	<label class="btn btn-default" id="btn-pause1">
+						        <input type="radio" name="options" id="option2" autocomplete="off">
+						        <i class="glyphicon glyphicon-pause"></i>
+						        Pause
+					      	</label>
+
+					      	<label class="btn btn-default active" id="btn-resume1">
+						        <input type="radio" name="options" id="option2" autocomplete="off" checked>
+						        <i class="glyphicon glyphicon-play"></i>
+						        Resume
+					      	</label>
+					     </div>
+					</div>
+
+
+				     <div class="span12">
+				     	<div id="clock2" class="time-second"></div>
+						<button type="button" class="btn btn-primary" id="btn-reset24">
+						    <i class="glyphicon glyphicon-repeat"></i>
+						    Reset 24
+ 					    </button>
+ 					    <button type="button" class="btn btn-primary" id="btn-reset14">
+						    <i class="glyphicon glyphicon-repeat"></i>
+						    Reset 14
+ 					    </button>
+				     </div>
+
+
+
+					
+				</div>
+
+				<div class="panel-body text-center col-md-4">
+					<h2 id="visit-name">
+						Visita
+					</h2>
+					<div id="visit-point" class="points">
+						0
+					</div>
+					<div class="col-md-12">
+						<button type="button" class="btn btn-primary" onclick="VisitAdd(1);">
+						     +1
+					    </button>
+					    <button type="button" class="btn btn-primary" onclick="VisitAdd(2);">
+						     +2
+					    </button>
+					    <button type="button" class="btn btn-primary" onclick="VisitAdd(3);">
+						     +3
+					    </button>
+					    <button type="button" class="btn" onclick="VisitAdd(-1);">
+						     -1
+					    </button>
+					</div>
+					<div style="height:70px;"></div>
+					<div>
+						<div class="span12 text-center">
+							<h3 class="col-md-6" >
+								Faults:
+							</h3>
+							<h3 id="visit-fault" class="col-md-6 faults text-left">
+								0
+							</h3>
+						</div>
+
+						<div class="col-md-12">
+							<button type="button" class="btn btn-primary" onclick="VisitAddFault(1);">
+							     +1
+						    </button>
+						    <button type="button" class="btn" onclick="VisitAddFault(-1);">
+							     -1
+						    </button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+</html>
